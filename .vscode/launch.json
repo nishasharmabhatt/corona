@@ -8,7 +8,7 @@
             "type": "pwa-msedge",
             "request": "launch",
             "name": "Open page1.html",
-            "file": "c:\\Users\\10\\Desktop\\test\\page1.html"
+            "file": "c:\\Users\\10\\Desktop\\test\\index.html"
         }
     ]
 }

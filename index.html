@@ -44,7 +44,12 @@
             
             </p>
         </div>
+        <div class="container h-50 my-5"  style="max-width: 40rem";>
+        <img name="slide" width="600" height="300" >
+       
         
+         
+        </div>
         <div class="container h-50 my-5"  style="max-width: 50rem"; data-aos="zoom-out" >
             <div class="card">
                 <div class="card-header">
@@ -166,6 +171,39 @@
                 </p>
          </div> 
          </div>
+         <script>
+         var i = 0; 			// Start Point
+          var images = [];	// Images Array
+           var time = 2000;	// Time Between Switch
+	 
+// Image List
+                images[0] = "https://static.vecteezy.com/system/resources/previews/000/834/564/non_2x/corona-virus-2020-vector.jpg";
+                images[1] = "https://s.yimg.com/ny/api/res/1.2/REIiovcqv4ADaL6XE25Zwg--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/https://media.zenfs.com/en/prnewswire.com/5fad13c05502bcc17c69fbef92ae828a";
+                images[2] = "https://parentsecurityonline.com/wp-content/uploads/2020/06/GettyImages-1213350827_header-1024x575.jpg";
+                images[3] = "https://images.financialexpress.com/2020/09/covid-19-cases-in-goa.jpg";
+                images[4] = "https://vzn-dmg-prd-asset-cdn.azureedge.net/ZukNtwHbhq5fDW6I4SB9DKRG4txQAcFwTMzCvMyAMgs/gravity:sm/resize:fill:1200:675:1:1/aHR0cHM6Ly9kbWd3ZWJwcm9kc3RvcmFnZS5ibG9iLmNvcmUud2luZG93cy5uZXQvZG1ncHJvZHdlYi9zZXJ2aWNlLWltYWdlcy9DT1ZJRC1UZXN0aW5nLmpwZw==.jpg";
+                images[5] =  "https://images.financialexpress.com/2021/07/vaccination7.jpg"
+                images[6] =  "https://ichef.bbci.co.uk/news/976/cpsprodpb/FB1A/production/_118728246_hi067646643.jpg"
+          //  Change Image
+          function changeImg(){
+	         document.slide.src = images[i];
+
+	      // Check If Index Is Under Max
+	         if(i < images.length - 1){
+	   // Add 1 to Index
+	          i++; 
+	         } else { 
+		// Reset Back To O
+	         	i = 0;
+	}
+
+          	// Run function every x seconds
+	        setTimeout("changeImg()", time);
+}
+
+         // Run function when page loads
+window.onload=changeImg;
+</script>
          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
          <!-- our aos data -->
